@@ -5,24 +5,24 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
-import { ProductListComponent } from './product-list/product-list.component';
-import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { EmployeesComponent } from './employees/employees.component';
+import { PopupEmployeesComponent } from './popup-employees/popup-employees.component';
 
 @NgModule({
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      { path: '', component: ProductListComponent },
+      { path: '', component: EmployeesComponent },
     ]),
     NgbModule
   ],
   declarations: [
     AppComponent,
     TopBarComponent,
-    ProductListComponent,
-    ProductAlertsComponent
+    EmployeesComponent,
+    PopupEmployeesComponent,
   ],
   bootstrap: [
     AppComponent

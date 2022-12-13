@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { PopupEmployeesComponent } from '../popup-employees/popup-employees.component';
 
 @Component({
   selector: 'app-top-bar',
@@ -6,7 +8,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./top-bar.component.css']
 })
 export class TopBarComponent {
-
+  constructor(private modalService: NgbModal) {}
+  openDialog()
+  {
+    const modalRef = this.modalService.open(PopupEmployeesComponent);
+  }
 }
 
 

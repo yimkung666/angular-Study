@@ -1,0 +1,20 @@
+<h2>Employees</h2>
+
+
+<table style="width:400px" class="table table-striped">
+<thead>
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col">Name</th>
+    <th scope="col">Tel</th>
+  </tr>
+</thead>
+<tbody>
+  <tr *ngFor="let eachEmployee of employeeData">
+  <td>{{ eachEmployee.id }}</td>
+  <td>{{ eachEmployee.name }}</td>
+  <td>{{ eachEmployee.tel }}</td>
+  </tr>
+</tbody>
+</table>
+
